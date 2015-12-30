@@ -1,0 +1,125 @@
+@import 'nib'
+global-reset()
+
+c-yellow = #f4dc0f
+
+html
+  box-sizing border-box
+
+*, *:before, *:after
+  box-sizing inherit
+
+html, body
+  height 100%
+  width 100%
+
+body
+  background-attachment fixed
+  background-image url('../img/bg.jpg');
+  background-size 100%
+  box-sizing border-box
+  color #111
+  font-family: 'Tinos', serif;
+  //font-family Open Sans, Helvetica Neue, Arial
+  //padding 20px
+
+.wrap
+  margin 0 auto
+
+article
+  height 100%
+  width 100%
+  header
+    border-bottom 2px solid c-yellow
+    color #fff
+    min-height 100%
+    padding-top 64px
+    width 100%
+    
+    .wrap
+      width 880px
+    
+    p
+      font-size 21.71px
+      line-height 34.73px
+      margin 30px 0
+      span
+        color c-yellow
+        font-style italic
+    .action
+      padding-top 60px
+  
+  section
+    background-color #fff
+    min-height 100%
+    padding-top 30px
+    
+    .wrap
+      width 1232px
+    
+    .people
+      display flex
+
+h1
+  font-size 58.61px
+  font-style italic
+  font-weight 600
+  margin 60px 0
+  
+h2
+  font-size 22px
+  font-weight 600
+  
+h4
+  font-size 14px
+  font-weight 600
+  text-transform uppercase
+
+$avatar_sizes = 120px
+
+.avatar
+  border 2px solid #fff
+  border-radius 50%
+  box-sizing border-box
+  vertical-align middle
+  
+  for $avatar_size in $avatar_sizes {
+    &.x{$avatar_size} {
+      height $avatar_size
+      width $avatar_size
+    }
+  }
+
+.person
+  max-width 25%
+  width 25%
+  .info
+    background #f4f4f4
+    padding 24px
+    p.title
+      font-size 18px
+    p.summary
+      font-size 16px
+
+a.button, button.button
+  border-radius 4px
+  color #fff
+  display inline-block
+  font-size 18px
+  font-style italic
+  font-weight 600
+  line-height 64px
+  text-align center
+  text-decoration none
+  &.yellow
+    border-color c-yellow
+    background-color c-yellow
+  &.border
+    background-color transparent
+    border-style solid
+    border-width 2px
+  &.large
+    font-size 26px
+    line-height 80px
+    width 360px
+  
