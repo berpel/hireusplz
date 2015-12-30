@@ -2,7 +2,9 @@ var express = require('express')
   , bodyParser = require('body-parser')
   , session = require('cookie-session')
   , cookieParser = require('cookie-parser')
-  
+
+var port = process.env.PORT || 3001;
+
 app = express();
 
 app.use(bodyParser());
@@ -26,6 +28,6 @@ app.get('/', function(req, res, next) {
   return res.render('index', {});
 });
 
-server = app.listen(3001, function() {
-  console.log('Express server started on port '+3001);
+server = app.listen(port, function() {
+  console.log('Express server started on port '+ port);
 });
