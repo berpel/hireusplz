@@ -2,6 +2,7 @@
 global-reset()
 
 c-yellow = #f4dc0f
+c-grey = #bbbaba
 
 html
   box-sizing border-box
@@ -47,7 +48,7 @@ article
         color c-yellow
         font-style italic
     .action
-      padding-top 60px
+      padding 60px 0
   
   section
     background-color #fff
@@ -59,6 +60,17 @@ article
     
     .people
       display flex
+      flex-wrap wrap
+      justify-content space-around
+  
+  footer
+    background-color #080807
+    background-image url('../img/footer.jpg');
+    background-position center
+    border-bottom 2px solid #fff
+    height 160px
+    text-align center
+    
 
 h1
   font-size 58.61px
@@ -69,16 +81,17 @@ h1
 h2
   font-size 22px
   font-weight 600
+  margin-bottom 20px
   
 h4
   font-size 14px
   font-weight 600
+  margin-bottom 20px
   text-transform uppercase
 
 $avatar_sizes = 120px
 
 .avatar
-  border 2px solid #fff
   border-radius 50%
   box-sizing border-box
   vertical-align middle
@@ -91,18 +104,40 @@ $avatar_sizes = 120px
   }
 
 .person
-  max-width 25%
-  width 25%
+  display flex
+  margin-bottom 30px
+  max-width 290px
+  padding-top 60px
+  width 290px
   .info
     background #f4f4f4
-    padding 24px
+    padding 85px 24px 24px
+    position relative
+    width 100%
+    .avatar
+      position absolute
+      left 85px
+      top -60px
+    p
+      margin-bottom 40px
     p.title
       font-size 18px
+      line-height 22px
     p.summary
       font-size 16px
+      line-height 20px
+    a.button
+      width 100%
+      &.grey
+        color #888
+      &.yellow
+        color #333
+      & + a.button
+        margin-top 24px
 
 a.button, button.button
   border-radius 4px
+  box-sizing border-box
   color #fff
   display inline-block
   font-size 18px
@@ -112,14 +147,29 @@ a.button, button.button
   text-align center
   text-decoration none
   &.yellow
-    border-color c-yellow
     background-color c-yellow
+    border-color c-yellow
+  &.grey
+    background-color c-grey
+    border-color c-grey
   &.border
     background-color transparent
     border-style solid
     border-width 2px
+    line-height 60px
   &.large
     font-size 26px
-    line-height 80px
+    line-height 76px
     width 360px
-  
+
+@media only screen and (max-width: 767px)
+  /* phones */
+  article
+    header
+      padding-left 20px
+      padding-right 20px
+      a.button.large
+        width 100%
+    header, section
+      .wrap
+        width 100%
