@@ -34,11 +34,11 @@ article
     border-bottom 2px solid c-yellow
     color #fff
     min-height 100%
-    padding-top 64px
+    padding 64px 20px 0
     width 100%
     
     .wrap
-      width 880px
+      max-width 880px
     
     p
       font-size 21.71px
@@ -53,16 +53,17 @@ article
   section
     background-color #fff
     min-height 100%
-    padding-top 30px
+    padding 30px 20px 0
     
     .wrap
-      width 1232px
+      max-width 1232px
     
     .people
       display flex
-      flex-wrap wrap
+      flex-flow wrap row
       justify-content space-around
-  
+      align-content stretch
+    
   footer
     background-color #080807
     background-image url('../img/footer.jpg');
@@ -105,27 +106,33 @@ $avatar_sizes = 120px
 
 .person
   display flex
-  margin-bottom 30px
-  max-width 290px
+  flex 1
+  flex-basis 290px
+  margin 30px 15px
   padding-top 60px
-  width 290px
+  //width 290px
   .info
     background #f4f4f4
     padding 85px 24px 24px
     position relative
     width 100%
     .avatar
+      left 50%
+      margin-left -60px
       position absolute
-      left 85px
       top -60px
     p
-      margin-bottom 40px
     p.title
       font-size 18px
+      height 44px
       line-height 22px
+      margin-bottom 20px
     p.summary
       font-size 16px
+      height 60px
       line-height 20px
+      margin-bottom 40px
+      overflow hidden
     a.button
       width 100%
       &.grey
@@ -166,8 +173,6 @@ a.button, button.button
   /* phones */
   article
     header
-      padding-left 20px
-      padding-right 20px
       a.button.large
         width 100%
     header, section

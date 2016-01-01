@@ -1,7 +1,7 @@
 extend layout
 
 block content
-  article
+  article(ng-controller='main')
     header
       .wrap
         img(src='/img/logo.png', width='60', height='60')
@@ -16,7 +16,7 @@ block content
         .action
           a.button.large.yellow.border(href='#professionals') Professionals for Hire
     
-    section
+    section(id='professionals')
       .wrap
         .people
 
@@ -27,8 +27,8 @@ block content
               p.title Senior Platform Developer/Architect
               h4 Summary
               p.summary 
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:Watkinsm3@gmail.com', target='_blank') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/matt-watkins-ab1a7229', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -37,8 +37,8 @@ block content
               p.title Lead iOS Developer
               h4 Summary
               p.summary Experienced iOS developer with leadership, sales and customer relations skills. Extensive familiarity with all aspects of mobile app development. Equally adept at writing code or talking to clients. Comfortable delivering a pitch, writing a spec, hashing out details and speaking to a crowd.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:mike@glasseffect.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/mikeglass', target='_blank') Hire thru LinkedIn
 
           .person 
             .info
@@ -46,9 +46,19 @@ block content
               h2 Glenn Thrift Jr
               p.title CTO
               h4 Summary
+              p.summary Specialties: Scaling, Architecture, NoSQL, Cloud platforms, Amazon Web Services, Java, Golang, iOS development(iPhone / iPad), Objective-C, Android Development, Rapid Prototyping, Ruby on Rails
+              a.button.grey.border(href='mailto:Windsor1337@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/profile/view?id=AAkAAAPOptoBvkZ8hjrwFY2Qil_DF9063t_KuwY', target='_blank') Hire thru LinkedIn
+
+          .person 
+            .info
+              img.avatar.x120(src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/099/3de/144aa32.jpg')
+              h2 Kayla Klumb
+              p.title Product Strategist
+              h4 Summary
               p.summary 
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:Kaylaklumb@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/kayla-klumb-598630a8', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -57,8 +67,8 @@ block content
               p.title Front-End Developer
               h4 Summary
               p.summary I enjoy creating elegant solutions for complex problems.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:berpel@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/bretterpel', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -66,19 +76,19 @@ block content
               h2 David Kleyla
               p.title Software Engineer / Data Scientist
               h4 Summary
-              p.summary 
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              p.summary Specializing in the design and creation of resilient distributed systems utilizing Machine Learning, Natural Language Processing,  and sound architecture.
+              a.button.grey.border(href='mailto:dkleyla@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/davidkleyla', target='_blank') Hire thru LinkedIn
 
           .person
             .info
               img.avatar.x120(src='https://media.licdn.com/media/AAEAAQAAAAAAAAWjAAAAJGUwOWY5ZTJhLWQ1OGItNGM1OS1iMWU2LWU2NDM4M2E1OWE2NA.jpg')
               h2 Scott Kaiser
-              p.title IOS Developer
+              p.title iOS Developer
               h4 Summary
               p.summary 
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:kyzer1978@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/scott-kaiser-85770137', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -87,8 +97,8 @@ block content
               p.title Product Designer
               h4 Summary
               p.summary I'm a detail-focused creator and designer with eight years experience building digital products &amp; improving businesses.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:macgrossman@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/macrae-grossman-00256313', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -97,8 +107,8 @@ block content
               p.title Systems Automation Architect / DevOps
               h4 Summary
               p.summary I'm a full stack developer with 10+ years of experience doing pretty much everything from development to operations.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:swervogm@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/knowroozi', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -107,8 +117,8 @@ block content
               p.title Javascript Developer
               h4 Summary
               p.summary Self-motivated, diligent, and reliable developer and entrepreneur. Experienced in developing web and mobile apps, I love turning a client's vision into reality.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:Me@joeless.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/joelessard', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -117,8 +127,8 @@ block content
               p.title Senior Android Developer
               h4 Summary
               p.summary No, I don't want to move to San Francisco. Stop asking.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:jarett.millard@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/jarettmillard', target='_blank') Hire thru LinkedIn
 
           .person
             .info
@@ -127,17 +137,17 @@ block content
               p.title Quality Assurance
               h4 Summary
               p.summary Information technology and operations professional with a comprehensive background in HRIS, CMS, CRM, Mobile, and ERP systems. My focus is on driving cost reduction by improving the efficiency, effectiveness, security, support and performance of information systems. Primary strength is providing services in quality assurance and utilizing various methods of system automation.
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:ceolin11@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/jacobadm', target='_blank') Hire thru LinkedIn
 
           .person
             .info
-              img.avatar.x120(src='')
+              img.avatar.x120(src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQ8AAAAJGJhZjIxMjY1LWFhZWItNDQ5Ny05YTllLWRkMjg2ZGNlZDEzNQ.jpg')
               h2 Brian Quackenbush
               p.title Platform Engineer
               h4 Summary
               p.summary 
-              a.button.grey.border(href='#') Email Me
-              a.button.yellow(href='#') Hire thru LinkedIn
+              a.button.grey.border(href='mailto:bquack@gmail.com') Email Me
+              a.button.yellow(href='https://www.linkedin.com/in/brian-quackenbush-b519348', target='_blank') Hire thru LinkedIn
 
     footer

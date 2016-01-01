@@ -1,4 +1,4 @@
-angular.module('hireusplz', ['ui.router','ngAnimate', 'ngDialog', 'btford.socket-io'])
+angular.module('hireusplz', ['ngAnimate'])
   .controller('main', ['$scope', function($scope) {
-    console.log('hello world')
+    console.log('Thanks for looking here. Please hire Brett Erpel.')
   }])

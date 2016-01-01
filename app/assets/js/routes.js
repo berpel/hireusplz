@@ -1,4 +1,4 @@
-angular.module('hireusplz')
+/*angular.module('hireusplz')
   .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // ROUTES
@@ -11,3 +11,4 @@ angular.module('hireusplz')
 
   }]);
 
+*/
